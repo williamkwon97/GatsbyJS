@@ -1,8 +1,8 @@
-import React from "react"
-import { css } from "@emotion/core"
-import { useStaticQuery, Link, graphql } from "gatsby"
+import React from "react";
+import { css } from "@emotion/core";
+import { useStaticQuery, Link, graphql } from "gatsby";
 
-import { rhythm } from "../utils/typography"
+import { rhythm } from "../utils/typography";
 export default function Layout({ children }) {
   const data = useStaticQuery(
     graphql`
@@ -14,7 +14,7 @@ export default function Layout({ children }) {
         }
       }
     `
-  )
+  );
   return (
     <div
       css={css`
@@ -35,15 +35,26 @@ export default function Layout({ children }) {
           {data.site.siteMetadata.title}
         </h3>
       </Link>
-      <Link
-        to={`/about/`}
-        css={css`
-          float: right;
-        `}
-      >
-        About
-      </Link>
-      {children}
+      <nav>
+        <Link
+          to={`/about/`}
+          css={css`
+            text-indent: 50px;
+            float: right;
+          `}
+        >
+          about
+        </Link>
+        <Link
+          to={`/contact/`}
+          css={css`
+            float: right;
+          `}
+        >
+          contact
+        </Link>
+        {children}
+      </nav>
     </div>
-  )
+  );
 }

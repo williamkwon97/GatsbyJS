@@ -1,0 +1,1 @@
+module.exports = require("/Users/williamkwon/Documents/GatsbyJS/src/utils/typography")
