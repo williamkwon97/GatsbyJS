@@ -35,7 +35,7 @@ export default function Layout({ children }) {
           {data.site.siteMetadata.title}
         </h3>
       </Link>
-      <nav>
+      <ul style={{ listStyle: `none`, float: `right` }}>
         <Link
           to={`/about/`}
           css={css`
@@ -48,13 +48,14 @@ export default function Layout({ children }) {
         <Link
           to={`/contact/`}
           css={css`
+            text-indent: 50px;
             float: right;
           `}
         >
-          contact
+          Skills
         </Link>
         {children}
-      </nav>
+      </ul>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 ---
-title: "Sweet Pandas Eating Sweets"
-date: "2017-08-10"
+title: "Gatsby"
+language: "Javascript"
 ---
 
 Pandas are really sweet.

@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.28",
+    "emotion": "^10.0.27",
     "gatsby": "^2.21.37",
     "gatsby-plugin-emotion": "^4.3.2",
     "gatsby-plugin-manifest": "^2.4.9",
@@ -22,7 +23,9 @@
     "gatsby-source-filesystem": "^2.3.8",
     "gatsby-transformer-remark": "^2.8.13",
     "react": "^16.12.0",
+    "react-custom-share": "^0.4.8",
     "react-dom": "^16.12.0",
+    "react-icons": "^3.10.0",
     "react-typography": "^0.16.19",
     "typography": "^0.16.19",
     "typography-theme-kirkham": "^0.16.19"
