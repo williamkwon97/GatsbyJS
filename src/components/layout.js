@@ -43,7 +43,7 @@ export default function Layout({ children }) {
             float: right;
           `}
         >
-          about
+          About
         </Link>
         <Link
           to={`/contact/`}
