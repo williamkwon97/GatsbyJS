@@ -9,14 +9,15 @@ export default function Skills({ data }) {
       <p>
         <ul>
           <li>
-            Programming Languages: Python, Swift, R, C++, Java,
-            JavaScript,Unix,/Linux, HTML/CSS, SQL
+            Programming Languages: Python, Swift, JavaScript, C#,R, Java,
+            ,Unix,/Linux, HTML/CSS, SQL
           </li>
           <li>
             {" "}
             Development Tools: XCode, R studio, Terminal,Android, Studio, JSON,
             Eclipse, Sublime, Pycharm, Atom , Flask&Django,Cocoapod{" "}
           </li>
+          <li> CI/CD: AWS,Heroku, and Travis CI</li>
           <li>Source Control: Git</li>
           <li>Documentation: Confluence, Testrail</li>
         </ul>

@@ -46,7 +46,7 @@ export default function Layout({ children }) {
           About
         </Link>
         <Link
-          to={`/contact/`}
+          to={`/skills/`}
           css={css`
             text-indent: 50px;
             float: right;
