@@ -22,7 +22,7 @@ export default function Home({ data }) {
             border-bottom: 1px solid;
           `}
         >
-          Coding Project
+          Coding Projects
         </h1>
 
         {data.allMarkdownRemark.edges.map(({ node }) => (
