@@ -75,8 +75,7 @@ export default function Layout({ children }) {
         `}
         onClick={() => dispatch({ type: "TOGGLE_DARK_MODE" })}
       >
-        {" "}
-        {<FiMoon />}
+        <FiMoon />
       </button>
       <ul style={{ listStyle: `none`, float: `right` }}>
         <Link
