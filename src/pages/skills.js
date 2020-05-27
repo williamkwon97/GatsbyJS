@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
-import { css } from "@emotion/core";
+import { Global, css } from "@emotion/core";
 import { useTheme } from "emotion-theming";
 import Context from "../pages/store/context";
 import { FiMoon } from "react-icons/fi";
@@ -21,6 +21,20 @@ export default function Skills({ data }) {
           }
         `}
       >
+        <Global
+          styles={css`
+            * {
+              box-sizing: border-box;
+              margin: 0;
+              padding: 0;
+            }
+            body {
+              background-color: ${state.isDark
+                ? theme.dark.background
+                : theme.light.background};
+            }
+          `}
+        />
         <h1>Skills </h1>
         <p>
           <ul>
