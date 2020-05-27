@@ -1,21 +1,37 @@
-import React from "react";
+import React, { useContext } from "react";
 import { graphql } from "gatsby";
+//theme
 import { css } from "@emotion/core";
+import { useTheme } from "emotion-theming";
+import Context from "../pages/store/context";
 import { rhythm } from "../utils/typography";
 import Layout from "../components/layout";
 import Footer from "../components/footer";
-
 //import icons
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { FiMoon } from "react-icons/fi";
+import { FiSun } from "react-icons/fi";
 
 export default function Home({ data }) {
   console.log(data);
 
+  const { state, dispatch } = useContext(Context);
+  const theme = useTheme();
+
   return (
     <Layout>
-      <div>
+      <div
+        css={css`
+          h1,
+          h2,
+          h3,
+          p {
+            color: ${state.isDark ? theme.dark.font : theme.light.font};
+          }
+        `}
+      >
         <h1
           css={css`
             display: inline-block;
@@ -24,7 +40,6 @@ export default function Home({ data }) {
         >
           Coding Projects
         </h1>
-
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
             <h3
@@ -32,7 +47,7 @@ export default function Home({ data }) {
                 margin-bottom: ${rhythm(1 / 4)};
               `}
             >
-              {node.frontmatter.title}{" "}
+              {node.frontmatter.title}
               <span
                 css={css`
                   color: #bbb;
@@ -62,8 +77,6 @@ export default function Home({ data }) {
           </li>
         </a>
       </ul>
-
-      <Footer />
     </Layout>
   );
 }

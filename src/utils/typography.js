@@ -1,7 +1,8 @@
-import Typography from "typography"
-import kirkhamTheme from "typography-theme-kirkham"
+import Typography from "typography";
 
-const typography = new Typography(kirkhamTheme)
+import kirkhamTheme from "typography-theme-kirkham";
 
-export default typography
-export const rhythm = typography.rhythm
+const typography = new Typography(kirkhamTheme);
+
+export default typography;
+export const rhythm = typography.rhythm;
