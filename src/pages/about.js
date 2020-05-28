@@ -13,10 +13,11 @@ export default function About({ data }) {
         About me
       </h1>
       <p>
-        I studied Applied Mathematics and computer Science and recent graduate
-        from the UT Austin. I am looking forward to working within developer
-        teams where I can utilize my programming skills and knowledge of
-        technology to contribute to the technology industry.
+        I am a recent graduate from the University of Texas at Austin with an
+        Applied Mathematics major and a minor in Computer Science. I am looking
+        forward to working within developer teams where I can utilize my
+        programming skills and knowledge of technology to contribute to the tech
+        industry.
       </p>
     </Layout>
   );

@@ -60,7 +60,7 @@ export default function Home({ data }) {
             <FaGithub />
           </li>
         </a>
-        <a href="mailto:williamkwon97@gmail.com?">
+        <a href="mailto:uk669@utexas.edu">
           <li>
             <MdEmail />
           </li>

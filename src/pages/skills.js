@@ -23,7 +23,8 @@ export default function Skills({ data }) {
             <li>
               {" "}
               Development Tools: XCode, R studio, Terminal ,Android, Studio,
-              JSON, Eclipse, Sublime, Pycharm, Atom , Flask&Django, Cocoapod{" "}
+              JSON, Eclipse, Sublime, Pycharm, Atom , Flask&Django, Cocoapod,
+              REST API, XML{" "}
             </li>
             <li> CI/CD: AWS, Heroku, and Travis CI</li>
             <li>Source Control: Git</li>
