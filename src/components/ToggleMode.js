@@ -8,11 +8,6 @@ export default function ToggleMode() {
     <ThemeConsumer>
       {(theme) => (
         <Button
-          css={css`
-            text-align: center;
-            position: absolute;
-            right: 550px;
-          `}
           variant="primary"
           onClick={(e) =>
             theme.setTheme(
