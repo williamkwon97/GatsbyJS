@@ -1,15 +1,6 @@
-<<<<<<< HEAD
-import React, { useContext } from "react";
-import { Global, css } from "@emotion/core";
-import { useTheme } from "emotion-theming";
-import Context from "../pages/store/context";
-import { FiMoon } from "react-icons/fi";
-import { FiSun } from "react-icons/fi";
-=======
 import storage from "local-storage-fallback";
 import React, { useState, useEffect } from "react";
 import { css } from "@emotion/core";
->>>>>>> temp-branch
 import { useStaticQuery, Link, graphql } from "gatsby";
 import ReactDOM from "react-dom";
 import { ThemeProvider, createGlobalStyle } from "styled-components";
