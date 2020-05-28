@@ -52,18 +52,18 @@ export default function Layout({ children }) {
             padding-top: ${rhythm(1.5)};
           `}
         >
-          <ToggleMode />
-
           <Link to={`/`}>
             <h3
               css={css`
                 margin-bottom: ${rhythm(2)};
                 display: inline-block;
                 font-style: normal;
+                color: #808080;
               `}
             >
               {data.site.siteMetadata.title}
             </h3>
+            <ToggleMode />
           </Link>
           <ul style={{ listStyle: `none`, float: `right` }}>
             <Link

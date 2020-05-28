@@ -7,7 +7,13 @@ export default function Skills({ data }) {
   return (
     <Layout>
       <div>
-        <h1>Skills </h1>
+        <h1
+          css={css`
+            color: #c0c0c0;
+          `}
+        >
+          Skills{" "}
+        </h1>
         <p>
           <ul>
             <li>

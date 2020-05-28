@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { graphql } from "gatsby";
 //theme
 import { css } from "@emotion/core";
-import { useTheme } from "emotion-theming";
+
 import { rhythm } from "../utils/typography";
 import Layout from "../components/layout";
 import Footer from "../components/footer";
@@ -23,6 +23,7 @@ export default function Home({ data }) {
           css={css`
             display: inline-block;
             border-bottom: 1px solid;
+            color: #808080;
           `}
         >
           Coding Projects
@@ -32,12 +33,13 @@ export default function Home({ data }) {
             <h3
               css={css`
                 margin-bottom: ${rhythm(1 / 4)};
+                color: #808080;
               `}
             >
               {node.frontmatter.title}
               <span
                 css={css`
-                  color: #bbb;
+                  color: #808080;
                 `}
               >
                 — {node.frontmatter.language}
