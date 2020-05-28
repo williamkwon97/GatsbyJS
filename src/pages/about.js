@@ -3,9 +3,6 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import { css } from "@emotion/core";
 export default function About({ data }) {
-  const { state, dispatch } = useContext(Context);
-  const theme = useTheme();
-
   return (
     <Layout>
       <h1

@@ -2,39 +2,11 @@ import React, { useContext } from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import { Global, css } from "@emotion/core";
-import { useTheme } from "emotion-theming";
-import Context from "../pages/store/context";
-import { FiMoon } from "react-icons/fi";
-import { FiSun } from "react-icons/fi";
+
 export default function Skills({ data }) {
-  const { state, dispatch } = useContext(Context);
-  const theme = useTheme();
   return (
     <Layout>
-      <div
-        css={css`
-          h1,
-          ul,
-          li,
-          p {
-            color: ${state.isDark ? theme.dark.font : theme.light.font};
-          }
-        `}
-      >
-        <Global
-          styles={css`
-            * {
-              box-sizing: border-box;
-              margin: 0;
-              padding: 0;
-            }
-            body {
-              background-color: ${state.isDark
-                ? theme.dark.background
-                : theme.light.background};
-            }
-          `}
-        />
+      <div>
         <h1>Skills </h1>
         <p>
           <ul>

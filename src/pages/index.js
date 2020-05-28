@@ -3,7 +3,6 @@ import { graphql } from "gatsby";
 //theme
 import { css } from "@emotion/core";
 import { useTheme } from "emotion-theming";
-import Context from "../pages/store/context";
 import { rhythm } from "../utils/typography";
 import Layout from "../components/layout";
 import Footer from "../components/footer";
@@ -17,21 +16,9 @@ import { FiSun } from "react-icons/fi";
 export default function Home({ data }) {
   console.log(data);
 
-  const { state, dispatch } = useContext(Context);
-  const theme = useTheme();
-
   return (
     <Layout>
-      <div
-        css={css`
-          h1,
-          h2,
-          h3,
-          p {
-            color: ${state.isDark ? theme.dark.font : theme.light.font};
-          }
-        `}
-      >
+      <div>
         <h1
           css={css`
             display: inline-block;
