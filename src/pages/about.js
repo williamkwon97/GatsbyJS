@@ -1,11 +1,17 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
-
+import { css } from "@emotion/core";
 export default function About({ data }) {
   return (
     <Layout>
-      <h1>About me</h1>
+      <h1
+        css={css`
+          color: #c0c0c0;
+        `}
+      >
+        About me
+      </h1>
       <p>
         I studied Applied Mathematics and computer Science and recent graduate
         from the UT Austin. I am looking forward to working within developer

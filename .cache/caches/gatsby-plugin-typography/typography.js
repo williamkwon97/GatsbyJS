@@ -1,1 +1,1 @@
-module.exports = require("/Users/williamkwon/Documents/GatsbyJS/src/utils/typography")
+module.exports = require("/Users/williamkwon/Downloads/GatsbyJS/src/utils/typography")
