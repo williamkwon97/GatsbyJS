@@ -24,7 +24,7 @@
     "gatsby-plugin-typography": "^2.5.2",
     "gatsby-plugin-use-dark-mode": "^1.1.2",
     "gatsby-source-filesystem": "^2.3.8",
-    "gatsby-transformer-remark": "^2.8.13",
+    "gatsby-transformer-remark": "^5.25.1",
     "local-storage-fallback": "^4.1.1",
     "npm-check-updates": "^6.0.1",
     "react": "^16.12.0",
